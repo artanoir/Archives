@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+   var question = {
+   answers: ["собака", "пес"],
+   question: "Загадка:\nС хозяином дружит,\nДом сторожит,\nЖивет под крылечком,\nХвост колечком.\nОтвет:"
+   };
+   var question1 = {
+   answers: ["лошадь", "конь", "лошадка"],
+   question: "Загадка:\nПодкованы ноги, \nБежит по дороге: \nГрива дугою, \nА хвост метлою.\nОтвет:"
+   };
+   var question2 = {
+   answers: ["воробей"],
+   question: "Загадка:\nСкачет бойко по дорожке, \nПодбирает с земли крошки. \nНе боится голубей... \nЧто за птичка? \nОтвет:"
+   };
+   var question3 = {
+   answers: ["кит"],
+   question: "Загадка:\nЧерез море-океан \nПлывет чудо-великан, \nПрячет ус во рту, \nРастянулся на версту. \nОтвет:"
+   };
+
+   var arr = [arr1, arr2, arr3, arr4];
+   var sum = 0
+   for (var i = 0; i <= 3; i++) {
+      var userAnswer = prompt(arr[i].question);
+      var correct = false;
+      for (var j = arr[i].answers.length - 1; j>= 0; j--) {
+         if(arr[i].answers[j] == userAnswer){
+               correct = true
+         }
+      }
+      if (correct) {
+         alert ("Поздравляем, вы угадали!");
+         sum++;
+
+      } else {
+         alert ("Вы не угадали!");
+      }
+      }
+      alert ("Вы угадали " + sum )
+
+</script>

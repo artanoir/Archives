@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script>
+
+   //name (a) rubls
+   //name (b) euro
+   //name (c) dollar
+   //name (d) rub to euro
+   //name (e) rub to dollar
+   // \n - перенос строки
+   // toFixed(2) - показ 2 строк после запятой
+
+   var roubles = prompt("Введите сумму в рублях:");                   
+   var euro = 91.73;                                                  
+   var dollar = 76.24;
+
+
+   var rubToEuro = roubles/euro;                                      
+   var rubToDollar = roubles/dollar;
+
+   alert (
+         roubles + ' рублей = ' + rubToEuro.toFixed(2) + ' евро. \n' + 
+         roubles + ' рублей = ' + rubToDollar.toFixed(2) + ' долларов'
+      );
+
+</script>
